@@ -114,11 +114,11 @@ if __name__ == '__main__':
                         lemmas_idf.append(0.0)
 
                 lemmas_file = open('lemmas_tf-idf/'+'tf-idf_' + file.split('_')[1].replace('html', 'txt'), "w+")
-                print(len(doc_lemmas))
+                # print(len(doc_lemmas))
                 for i in range(len(doc_lemmas)):
-                    print(i)
+                    # print(i)
                     lemmas_file.write(doc_lemmas[i] + ' ' + str(lemmas_tf[i]) + ' ' + str(lemmas_idf[i]) + '\n')
-                print()
+                # print()
                 lemmas_file.close()
 
 
@@ -129,4 +129,4 @@ if __name__ == '__main__':
                 tokens_idf = []
 
                 progress_counter += 1
-                print(str(progress_counter) + ' /115 or ' + str(progress_counter/155*100) + '%')
+                print(str(progress_counter) + ' /115 or ' + str((progress_counter/155*100)) + '%')
