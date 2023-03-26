@@ -129,4 +129,4 @@ if __name__ == '__main__':
                 tokens_idf = []
 
                 progress_counter += 1
-                print(str(progress_counter) + ' /115 or ' + str((progress_counter/155*100)) + '%')
+                print(str(progress_counter) + ' /115 or ' + str(round(progress_counter/115*100, 2)) + ' %')
